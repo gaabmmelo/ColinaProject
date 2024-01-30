@@ -16,3 +16,4 @@ use App\Http\Controllers\UserController;
 */
 
 Route::post('/register', [UserController::class, 'store'])->name('users.store');
+Route::post('login', [UserController::class, 'login'])->name('users.login');
